@@ -1,0 +1,611 @@
+img{
+  max-width: 100%;
+}
+video {
+  max-width: 100%;
+  height: auto;
+
+  
+}
+
+/*Footer*/
+
+footer{
+  margin-top: 100px;
+}
+.footergrid{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.footervenstre img{
+  max-width: 60px;
+  margin-left: 20px;
+}
+.footerhojre img{
+  max-width: 40px;
+}
+
+/*Header*/
+
+.banner{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+}
+
+.main-menu ul{
+  list-style: none;
+  display: none;
+  padding: 0;
+}
+
+.main-menu.shown{
+  display: contents;
+}
+.main-menu.shown ul{
+  border-top: 2px solid #F5F5F5;
+  padding-top: 1rem;
+  display: flex;
+  flex-flow: column;
+  flex-basis: 100%;
+
+}
+
+.toggle-btn{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: block;
+
+}
+
+.bar {
+  display: block;
+  width: 70px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+  margin-bottom: 15px;
+}
+
+.main-menu a{
+  color: #F5F5F5;
+  font-family: Helvetica, arial, sans-serif;
+  font-weight: lighter;
+  line-height: 200%;
+  margin-left: 15px;
+  font-size: 200%;
+  text-decoration: none;
+}
+
+.navn a{
+  text-decoration: none;
+}
+
+/*Forside*/
+
+.mig {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 5s infinite;
+}
+.mig img{
+  max-width: 400px;
+}
+
+.portfoliotekst {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.portfoliotekst img {
+  max-width: 1000px;
+}
+
+/*Portfolio*/
+
+@media (max-width: 900px) {
+
+  .portfoliocontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto; 
+    flex-direction: column;
+    max-width: 100%;
+    
+}
+  .portfoliocontainer figure{
+    min-width: 300px;
+    max-width: 100%;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    background-color: #707070;
+    border: 5px solid #F5F5F5;
+    padding: 5px;
+    text-align: center;
+    
+    
+}
+
+
+.portfoliocontainer h1{
+    font-family: Helvetica, arial, sans-serif;
+    font-weight:bolder;
+    color: #F5F5F5;
+    font-size: 300%;
+}
+
+.portfoliocontainer h3{
+    font-family: Helvetica, arial, sans-serif;
+    font-weight:lighter;
+    font-style: oblique;
+    color: #F5F5F5;
+    font-size: 200%;
+    line-height: 100%;
+}
+
+}
+@media (min-width: 900px) {
+
+  .portfoliocontainer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: auto;
+    max-width: 100%;
+    
+  }
+  .portfoliocontainer figure{
+    min-width: 400px;
+    max-width: 600px;
+    justify-content: center;
+    align-items: center;
+    background-color: #707070;
+    border: 5px solid #F5F5F5;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+
+.portfoliocontainer h1{
+    font-family: Helvetica, arial, sans-serif;
+    font-weight:bolder;
+    color: #F5F5F5;
+    font-size: 400%;
+}
+
+.portfoliocontainer h3{
+    font-family: Helvetica, arial, sans-serif;
+    font-weight:lighter;
+    font-style: oblique;
+    color: #F5F5F5;
+    font-size: 200%;
+    line-height: 100%;
+}
+
+}
+
+/*Spil*/
+
+.tema4spil{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+/*Tilbageknap*/
+
+
+.tilbageknap{
+  display: flex;
+  background-color: #707070;
+  border: 5px solid #F5F5F5;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  max-width: 300px;
+  text-decoration: none;
+  margin-top: 70px;
+
+  
+}
+
+
+.tilbageknap h1{
+  font-family: Helvetica, arial, sans-serif;
+  font-weight:bolder;
+  color: #F5F5F5;
+  font-size: 200%;
+  text-decoration: none;
+}
+
+.tilbageknap h3{
+  font-family: Helvetica, arial, sans-serif;
+  font-weight:lighter;
+  color: #F5F5F5;
+  font-size: 200%;
+  line-height: 100%;
+}
+
+.tilbageknap figure a{
+  text-decoration: none;
+}
+
+
+
+@media (max-width: 900px) { 
+
+  h1{
+    color: #F5F5F5;
+    font-family: Helvetica, arial, sans-serif;
+    padding: 15px;
+    font-size: 250%;
+    margin-left: 2%;
+    margin-top: 0;
+
+}
+
+h2{
+  color: #F5F5F5;
+  font-family: Helvetica, arial, sans-serif;
+  font-weight: lighter;
+  font-style: oblique;
+  margin-left: 4%;
+  font-size: 150%;
+}
+/*Header*/
+
+header h1{
+  color: #F5F5F5;
+  font-family: Helvetica, arial, sans-serif;
+  font-weight: lighter;
+  line-height: 125%;
+  font-size: 150%;
+  margin-left: 0px;
+}
+.main-menu a{
+  color: #F5F5F5;
+  font-family: Helvetica, arial, sans-serif;
+  font-weight: lighter;
+  line-height: 200%;
+  margin-left: 15px;
+  font-size: 100%;
+  text-decoration: none;
+}
+  .bar {
+    display: block;
+    max-width: 100%;
+    width: 35px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+    margin-bottom: 15px;
+  }
+
+/*Forside*/
+.mig {
+  max-width: 100%;
+
+}
+.mig img{
+max-width: 100%;
+}
+.portfoliotekst {
+  max-width: 100%;
+}
+
+.portfoliotekst img {
+  max-width: 100%;
+}
+  /*Tema 2*/
+
+.studiestartsproeveimg{
+  text-align: center;
+}
+.studiestartsproeveimg img{
+  width: 500px;
+  height: 300px;
+}
+
+.tema2moodboard{
+  text-align: center;
+}
+.tema2moodboard img{
+  width: 500px;
+  height: 300px;
+}
+.tema2styletile{
+  text-align: center;
+}
+.tema2styletile img{
+  width: 500px;
+  height: 300px;
+}
+
+/*Tema 3*/
+
+
+.tema3tee{
+  text-align: center;
+}
+.tema3artmuseum img{
+  width: 500px;
+  height: 300px;
+}
+
+.tema3styletile{
+  text-align: center;
+}
+.tema3styletile img{
+  width: 500px;
+  height: 300px;
+}
+
+.tema3moodboard{
+  text-align: center;
+}
+.tema3moodboard img{
+  width: 600px;
+  height: 350px;
+}
+
+/*Tema 4*/
+
+
+.tema4styletile{
+  text-align: center;
+}
+.tema4styletile img{
+  width: 500px;
+  height: 300px;
+}
+
+.tema4aktivitetsdiagram{
+  text-align: center;
+}
+.tema4aktivitetsdiagram img{
+  width: 300px;
+  height: 400px;
+}
+
+/*Tema 5*/
+
+
+.tema5moodboard{
+  text-align: center;
+}
+.tema5moodboard img{
+  width: 500px;
+  height: 300px;
+}
+.tema5styletile{
+  text-align: center;
+}
+.tema5styletile img{
+  width: 500px;
+  height: 300px;
+}
+
+/*Om mig*/
+
+.ommigfoto{
+  text-align: center;
+  max-width: 100%;
+}
+.ommigfoto img{
+  border-radius: 300px;
+  max-width: 300px;
+  max-width: 100%;
+}
+}
+
+
+
+@media (min-width: 900px) {  
+
+  /*Tema2*/
+  
+.tema2grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2em;
+}
+
+.tekst21{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  
+}
+.tekst22{
+  grid-column: 1/2;
+  grid-row: 2/4;
+  
+}
+.studiestartsproeveimg{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: 5%;
+  
+}
+.tema2moodboard{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin: 5%;
+  
+}
+.tema2styletile{
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin: 5%;
+  
+}
+
+
+
+/*Tema3*/
+  
+.tema3grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2em;
+}
+
+.tekst31{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.tekst32{
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.tekst33{
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.tema3moodboard{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: 5%;
+}
+
+.tema3styletile{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin: 5%;
+}
+
+.tema3artmuseum{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin: 5%;
+}
+
+/*Tema4*/
+  
+.tema4grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 2em;
+}
+
+.tekst41{
+grid-column: 1/2;
+grid-row: 1/2;
+}
+
+.tekst42{
+grid-column: 1/2;
+grid-row: 2/3;
+}
+
+.tema4aktivitetsdiagram{
+grid-column: 2/3;
+grid-row: 2/3;
+margin: 5%;
+}
+
+.tema4styletile{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: 5%;
+  }
+
+/*Tema5*/
+  
+.tema5grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 2em;
+}
+
+.tekst51{
+grid-column: 2/3;
+grid-row: 1/2;
+}
+
+.tekst52{
+grid-column: 1/2;
+grid-row: 2/3;
+}
+
+.tekst53{
+grid-column: 1/2;
+grid-row: 3/4;
+}
+
+.video{
+grid-column: 1/2;
+grid-row: 1/2;
+margin: 5%;
+}
+
+.tema5moodboard{
+grid-column: 2/3;
+grid-row: 2/3;
+margin: 5%;
+}
+
+.tema5styletile{
+grid-column: 2/3;
+grid-row: 3/4;
+margin: 5%;
+}
+
+.ommig{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2em;
+}
+
+.ommigtekst{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.ommigfoto{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: 5%;
+  text-align: center;
+}
+.ommigfoto img{
+  border-radius: 300px;
+  max-width: 500px;
+}
+  
+}
+
+
+  @keyframes rotate {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
